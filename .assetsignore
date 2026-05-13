@@ -1,0 +1,11 @@
+.git
+.gitignore
+.assetsignore
+.wrangler
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+node_modules
+*.log
+img/originals
