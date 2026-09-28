@@ -188,6 +188,22 @@
     })(window, document, "clarity", "script", "wtknj5u38n");
   </script>
   <script src="https://cdn.idpixel.app/v1/idp-analytics-6a0ddd6883e9dbc113e83094.min.js" defer></script>
+<!-- Marketing Performance 2026-09-18: Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2465026540670971');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 
 <body>
@@ -245,7 +261,23 @@
   </div>
 
   <!-- SERVICES -->
-  <section class="sec" id="services">
+  <!-- EE 2026-09-21: GALLERY MOVED ABOVE SERVICES. Measured that day on a 375px viewport: page is 9.2 screens, GA4 scroll depth is 16% (~1.5 screens) and 95% of sessions are mobile — so the median visitor never reached the gallery at 4.9 screens. For a dock builder the finished-work photos ARE the proof, and they sat behind a 3.6-screen services block. The sec--alt background class was swapped between the two sections so the alternating rhythm still reads hero / plain / alt / plain. Section ids and in-page #anchors are unchanged. --><section class="sec" id="gallery">
+    <div class="sec__head">
+      <p class="sec__label ao">Our Work</p>
+      <h2 class="sec__title ao ao-d1">Built With Pride</h2>
+      <p class="sec__desc ao ao-d2">Recent projects across Lake Marion, Lake Moultrie, Santee, Summerton, Manning, and surrounding Lowcountry communities.</p>
+    </div>
+    <div class="gal">
+      <div class="gal__grid ao">
+        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-1.jpg" alt="Custom dock build on Lake Marion SC by CCS Docks & Decking" width="900" height="1200" loading="lazy" decoding="async"></div>
+        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-2.jpg" alt="Waterfront dock construction Summerton SC" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 55%"></div>
+        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-3.jpg" alt="Seawall installation Lake Moultrie South Carolina" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-4.jpg" alt="Outdoor deck build near Santee SC by CCS Docks" width="900" height="1200" loading="lazy" decoding="async"></div>
+        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-5.jpg" alt="Dock and pier construction Manning SC" width="900" height="1200" loading="lazy" decoding="async"></div>
+        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-6.jpg" alt="Dock repair and restoration Clarendon County SC" width="1200" height="900" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </section><section class="sec sec--alt" id="services">
     <div class="sec__head">
       <p class="sec__label ao">What We Build</p>
       <h2 class="sec__title ao ao-d1">Waterfront, Done Right</h2>
@@ -289,23 +321,7 @@
   </section>
 
   <!-- GALLERY -->
-  <section class="sec sec--alt" id="gallery">
-    <div class="sec__head">
-      <p class="sec__label ao">Our Work</p>
-      <h2 class="sec__title ao ao-d1">Built With Pride</h2>
-      <p class="sec__desc ao ao-d2">Recent projects across Lake Marion, Lake Moultrie, Santee, Summerton, Manning, and surrounding Lowcountry communities.</p>
-    </div>
-    <div class="gal">
-      <div class="gal__grid ao">
-        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-1.jpg" alt="Custom dock build on Lake Marion SC by CCS Docks & Decking" width="900" height="1200" loading="lazy" decoding="async"></div>
-        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-2.jpg" alt="Waterfront dock construction Summerton SC" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 55%"></div>
-        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-3.jpg" alt="Seawall installation Lake Moultrie South Carolina" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 40%"></div>
-        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-4.jpg" alt="Outdoor deck build near Santee SC by CCS Docks" width="900" height="1200" loading="lazy" decoding="async"></div>
-        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-5.jpg" alt="Dock and pier construction Manning SC" width="900" height="1200" loading="lazy" decoding="async"></div>
-        <div class="gal__item" onclick="lbO(this)"><img src="img/gallery-6.jpg" alt="Dock repair and restoration Clarendon County SC" width="1200" height="900" loading="lazy" decoding="async"></div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- LIGHTBOX -->
   <div class="lb" id="lb" onclick="lbC()">
@@ -407,5 +423,16 @@
     document.addEventListener('keydown',e=>{if(e.key==='Escape')lbC()});
   </script>
 
+<!-- Marketing Performance 2026-09-18: Meta Lead events -->
+<script>
+(function(){
+  var f=document.querySelector('form.contact-form');
+  if(f){f.addEventListener('submit',function(){ if(window.fbq){fbq('track','Lead',{content_name:'CCS Contact Form'});} });}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="tel:"]');
+    if(a&&window.fbq){fbq('track','Contact',{content_name:'Phone Click'});}
+  },true);
+})();
+</script>
 </body>
 </html>
