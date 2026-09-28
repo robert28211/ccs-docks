@@ -204,6 +204,22 @@ fbq('track','PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel -->
+<style id="ee-mobile-proof">
+/* EE 2026-09-28 mobile: quote form moved up. Phones only (<=480px); desktop order untouched.
+   Clarity 2026-09-20..26: 19% avg scroll depth, 93% mobile. The quote form sat ~6.9 screens down,
+   behind a 3.4-screen services block. Visual order on phones: hero (call + free quote) -> trust strip
+   -> project photos -> quote form + direct phone -> services -> footer. Section ids and #anchors unchanged. */
+@media (max-width:480px){
+ body{display:flex;flex-direction:column}
+ body>*{order:5}
+ body>.hero{order:1}
+ body>.trust{order:2}
+ body>#gallery{order:3}
+ body>#contact{order:4;background:var(--snow)}
+ body>#services{background:var(--white)}
+ body>.foot{order:6}
+}
+</style>
 </head>
 
 <body>
