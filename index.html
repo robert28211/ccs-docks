@@ -77,7 +77,7 @@
     .hero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,42,51,0.15) 0%,rgba(26,42,51,0.55) 100%)}
     .hero__content{position:relative;z-index:2;width:100%;max-width:1340px;margin:0 auto;padding:0 3rem 6rem}
     .hero__eyebrow{font-size:0.72rem;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:1.5rem}
-    .hero h1{font-size:clamp(3rem,7vw,6rem);line-height:1.0;color:var(--white);letter-spacing:-0.03em;margin-bottom:1rem}
+    .hero h1{font-size:clamp(2.4rem,6vw,5.25rem);line-height:1.0;color:var(--white);letter-spacing:-0.03em;margin-bottom:1rem}
     .hero h1 em{font-style:italic;font-weight:300}
     .hero__sub{font-size:1.1rem;color:rgba(255,255,255,0.75);font-weight:300;letter-spacing:0.02em;margin-bottom:0.75rem}
     .hero__phone{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);text-decoration:none;display:inline-block;margin-bottom:2.5rem;font-weight:500;opacity:0.85;transition:opacity 0.3s}
@@ -120,7 +120,7 @@
     .svc h3{font-size:1.75rem;color:var(--ink);margin-bottom:1rem;letter-spacing:-0.01em}
     .svc p{font-size:0.9rem;color:var(--storm);line-height:1.8;font-weight:300}
     @media(max-width:768px){.svc-grid{grid-template-columns:1fr}}
-    .svc-cta{text-align:center;margin-top:4rem}
+    .svc-cta{text-align:center;margin-top:4rem}.svc-cta__lead{max-width:34rem;margin:0 auto 1.25rem;color:var(--storm);font-size:1rem;line-height:1.6}.f-note{margin-top:0.9rem;font-size:0.82rem;line-height:1.5;color:var(--storm);text-align:center}
 
     /* ── GALLERY ── */
     .gal{max-width:1340px;margin:0 auto}
@@ -256,12 +256,12 @@ src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <p class="hero__eyebrow ao">Waterfront Construction &mdash; Santee Cooper Country</p>
-      <h1 class="ao ao-d1">Built for <em>the Water</em><br>Built to Last</h1>
-      <p class="hero__sub ao ao-d2">Serving Lake Marion, Lake Moultrie & Surrounding Communities</p>
+      <h1 class="ao ao-d1">Docks, Decks &amp; Seawalls<br><em>on Lake Marion &amp; Lake Moultrie</em></h1>
+      <p class="hero__sub ao ao-d2">Built for the water. Built to last.</p>
       <a href="tel:8039537632" class="hero__phone ao ao-d2">(803) 953-7632</a>
       <div class="hero__actions ao ao-d3">
-        <a href="#contact" class="hero__btn hero__btn--fill">Get a Free Quote</a>
-        <a href="#gallery" class="hero__btn hero__btn--ghost">See Our Work</a>
+        <a href="#contact" class="hero__btn hero__btn--fill">Get My Free Dock Quote</a>
+        <a href="#gallery" class="hero__btn hero__btn--ghost">See Our Docks &amp; Seawalls</a>
       </div>
     </div>
   </section>
@@ -280,7 +280,7 @@ src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></
   <!-- EE 2026-09-21: GALLERY MOVED ABOVE SERVICES. Measured that day on a 375px viewport: page is 9.2 screens, GA4 scroll depth is 16% (~1.5 screens) and 95% of sessions are mobile — so the median visitor never reached the gallery at 4.9 screens. For a dock builder the finished-work photos ARE the proof, and they sat behind a 3.6-screen services block. The sec--alt background class was swapped between the two sections so the alternating rhythm still reads hero / plain / alt / plain. Section ids and in-page #anchors are unchanged. --><section class="sec" id="gallery">
     <div class="sec__head">
       <p class="sec__label ao">Our Work</p>
-      <h2 class="sec__title ao ao-d1">Built With Pride</h2>
+      <h2 class="sec__title ao ao-d1">Recent Docks, Seawalls &amp; Decks</h2>
       <p class="sec__desc ao ao-d2">Recent projects across Lake Marion, Lake Moultrie, Santee, Summerton, Manning, and surrounding Lowcountry communities.</p>
     </div>
     <div class="gal">
@@ -296,7 +296,7 @@ src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></
   </section><section class="sec sec--alt" id="services">
     <div class="sec__head">
       <p class="sec__label ao">What We Build</p>
-      <h2 class="sec__title ao ao-d1">Waterfront, Done Right</h2>
+      <h2 class="sec__title ao ao-d1">What We Build &mdash; And Why It Holds Up on Santee Cooper Water</h2>
       <p class="sec__desc ao ao-d2">From new construction to repair work, CCS builds and restores the features that define waterfront living across Summerton, Santee, Manning, and Clarendon County.</p>
     </div>
     <div class="svc-grid">
@@ -304,15 +304,15 @@ src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></
         <div class="svc__img"><img src="img/service-docks.jpg" alt="Custom dock and pier construction on Lake Marion SC" width="900" height="1200" loading="lazy" decoding="async"></div>
         <div class="svc__body">
           <p class="svc__num">01 &mdash; Docks & Piers</p>
-          <h3>Custom Docks & Piers</h3>
-          <p>We build custom wood and composite docks designed around how you actually use your waterfront. Whether you want a simple place to fish or a larger layout for entertaining, we focus on smart design, strong framing, and quality materials.</p>
+          <h3>Custom Docks Built Around How You Use the Water</h3>
+          <p>We build custom wood and composite docks designed around how you actually use your waterfront. Whether you want a simple place to fish or a larger layout for entertaining, we focus on smart design, strong framing, and quality materials. We work with pressure-treated lumber and premium composite decking rated for freshwater immersion &mdash; materials that hold up to lake humidity, sun, and changing water levels.</p>
         </div>
       </div>
       <div class="svc ao ao-d1">
         <div class="svc__img"><img src="img/service-seawalls.jpg" alt="Seawall construction protecting waterfront property in SC" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 30%"></div>
         <div class="svc__body">
           <p class="svc__num">02 &mdash; Seawalls</p>
-          <h3>Shoreline Protection</h3>
+          <h3>Stop Shoreline Erosion Before It Costs You More</h3>
           <p>A failing shoreline does not fix itself. If your bank is washing out or taking storm damage, a properly built seawall protects your property edge and gives you a more stable waterfront long term.</p>
         </div>
       </div>
@@ -320,20 +320,20 @@ src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></
         <div class="svc__img"><img src="img/service-decking.jpg" alt="Custom waterfront deck construction in Manning SC" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 72%"></div>
         <div class="svc__body">
           <p class="svc__num">03 &mdash; Decking</p>
-          <h3>Outdoor Living Spaces</h3>
-          <p>We build decks that create more usable outdoor space and tie your home more naturally to the water. The goal is not just extra square footage &mdash; it is space you will actually enjoy using.</p>
+          <h3>Decks That Connect Your Home to the Lake</h3>
+          <p>We build decks that create more usable outdoor space and tie your home more naturally to the water. The goal is not just extra square footage &mdash; it is space you will actually enjoy using. We design decks with the sightline in mind, so whether you are having coffee at sunrise or watching the kids swim, the layout works with the water, not against it.</p>
         </div>
       </div>
       <div class="svc ao ao-d3">
         <div class="svc__img"><img src="img/service-repairs.jpg" alt="Dock repair and restoration on South Carolina lake" width="900" height="1200" loading="lazy" decoding="async" style="object-position:center 53%"></div>
         <div class="svc__body">
           <p class="svc__num">04 &mdash; Dock Repairs</p>
-          <h3>Honest Repair Work</h3>
+          <h3>Repair Work With a Real Assessment First</h3>
           <p>Not every project needs a full rebuild. If your dock has loose boards, storm damage, or aging components, we inspect it and give you a clear assessment before recommending the next step.</p>
         </div>
       </div>
     </div>
-    <div class="svc-cta ao"><a href="#contact" class="cta-pill">Get a Free Quote</a></div>
+    <div class="svc-cta ao"><p class="svc-cta__lead">Not sure which service you need? Tell us what&rsquo;s going on and we&rsquo;ll help you figure out the right approach.</p><a href="#contact" class="cta-pill">Start With a Free Quote</a></div>
   </section>
 
   <!-- GALLERY -->
@@ -371,7 +371,8 @@ src="https://www.facebook.com/tr?id=2465026540670971&ev=PageView&noscript=1"/></
           </select>
         </div>
         <div class="fg"><label>Message</label><textarea name="message" required placeholder="Tell us about your project..."></textarea></div>
-        <button type="submit" class="f-submit">Send My Request</button>
+        <button type="submit" class="f-submit">Request My Free Quote</button>
+        <p class="f-note">Most homeowners hear back within one business day. No pressure &mdash; just a straight conversation about what you need.</p>
       </form>
       <div class="contact-side">
         <h3>Questions? Reach Josh Gast's team directly.</h3>
